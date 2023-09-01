@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당신의 전역일계산기</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: italic 30px serif;
+}
+#slide_show {
+    width: 65%;
+    height: 400px;
+    margin: 0 auto 100px auto;
+    overflow: hidden; /* 박스 바깥의 것 */
+
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.slide_wrapper{
+    width: 1200%;
+    height: 100%;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide_wrapper>li{
+     
+      width: 100%;
+      height: 100%;
+}
+
+h1{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a{
+    color: darkgreen;
+}
+
+div{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+
+}
+#count{
+    text-align: center;
+    margin: auto;
+}
+
+.day{
+    background: linear-gradient(27deg, #7928CA, #FF0080, #7928CA, #FF0080);
+  -webkit-background-clip: text;
+  background-clip: padding;
+  -webkit-text-fill-color: transparent;
+}
+
+.Mclass{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100%;
+    margin: auto;
+}
+
+.target {
+      background: black;
+      color: white;
+      display: none;
+    }
+
+
+    </style>
+</head>
+<body>
+   <p> <h1><a href="index.html">당신의 남은 군생활은?</a></h1><hr>       
+        <div id="count"></div><br>
+            <div class="day">*당신의 알찬 하루*</div>
+    </p>
+
+        
+        <section id="slide_show">
+        <ul class="slide_wrapper">
+            <li><img src="img/img02.jpeg"></li>
+            <li><img src="img/img01.png"></li>
+            <li><img src="img/img04.jpg"></li>
+            <li><img src="img/img07.png"></li>
+            <li><img src="img/img01.png"></li>
+            <li><img src="img/img04.jpg"></li>
+            <li><img src="img/img06.jpeg"></li>
+            <li><img src="img/img05.jpg"></li>
+            <li><img src="img/img04.jpg"></li>
+            <li><img src="img/img08.jpeg"></li>
+            <li><img src="img/img04.jpg"></li>
+            <li><img src="img/img03.jpg"></li>
+        </ul>  
+        </section>
+    
+        
+    <div class="target target1">개좆됨</div>
+    <div class="target target2">좀좆됨</div>
+    <div class="target target3">넘보면 안됨 일병이나 졸업하세요</div>
+    <div class="target target4">타노스 침공+지구멸망</div>
+
+    <div class="Mclass"> 당신의 계급은? 
+        <div class="box box1">이병</div>
+        <div class="box box2">일병</div>
+        <div class="box box3">상병</div>
+        <div class="box box4">병장</div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src='js/ddaycnt.js'></script>
+</body>
+</html>
